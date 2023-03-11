@@ -21,7 +21,7 @@ You will go through the exercises listed in the book and take screenshots of the
 
 ### Import Sakila Database Schema and Data P.29-30
 
-![Alt text](\screenshot\1.png?raw=true "Optional Title")
+![Alt text](./screenshot/1.png?raw=true "Optional Title")
 
 Screenshot goes here
 

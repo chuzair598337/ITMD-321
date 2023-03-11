@@ -21,7 +21,7 @@ You will go through the exercises listed in the book and take screenshots of the
 
 ### Import Sakila Database Schema and Data P.29-30
 
-![Alt text](./screenshot/1.png?raw=true "Optional Title")
+![Screenshot](./screenshot/1.png?raw=true "")
 
 Screenshot goes here
 
@@ -42,7 +42,7 @@ CREATE TABLE person
  CONSTRAINT pk_person PRIMARY KEY (person_id)
  );
 
-Screenshot goes here
+![Screenshot](./screenshot/2.png?raw=true "")
 
 ### Create Table Favorite Food P.32
 
@@ -53,7 +53,7 @@ CONSTRAINT pk_favorite_food PRIMARY KEY (person_id, food),
 CONSTRAINT fk_fav_food_person_id FOREIGN KEY (person_id) REFERENCES person (person_id)
 );
 
-Screenshot goes here
+![Screenshot](./screenshot/3.png?raw=true "")
 
 ### Alter Table to allow for auto_increment P.34
 
@@ -62,25 +62,25 @@ ALTER TABLE person
  MODIFY person_id SMALLINT UNSIGNED AUTO_INCREMENT;
 set foreign_key_checks=1;
 
-Screenshot goes here
+![Screenshot](./screenshot/4.png?raw=true "")
 
 ### INSERT statement P.35
 
 INSERT INTO person(person_id, fname, lname, eye_color, birth_date) VALUES (null, 'William','Turner', 'BR', '1972-05-27');
 
-screenshot goes here
+![Screenshot](./screenshot/5.png?raw=true "")
 
 ### SELECT statement P.35
 
  SELECT person_id, fname, lname, birth_date FROM person;
 
-Screenshot goes here
+![Screenshot](./screenshot/6.png?raw=true "")
 
 ### SELECT William Turner P.36
 
  SELECT person_id, fname, lname, birth_date FROM person WHERE lname = 'Turner';
 
-Screenshot goes here
+![Screenshot](./screenshot/7.png?raw=true "")
 
 ### INSERT into favorite food P.36
 
@@ -88,72 +88,72 @@ INSERT INTO favorite_food (person_id, food) VALUES (1, 'pizza');
 INSERT INTO favorite_food (person_id, food) VALUES (1, 'cookies');
 INSERT INTO favorite_food (person_id, food) VALUES (1, 'nachos');
 
-Screenshot goes here
+![Screenshot](./screenshot/8.png?raw=true "")
 
 ### SELECT William Turners favorite food P.36
 
 SELECT food FROM favorite_food WHERE person_id = 1 ORDER BY food;
 
-Screenshot goes here
+![Screenshot](./screenshot/9.png?raw=true "")
 
 ### INSERT INTO person P.37
 
 INSERT INTO person(person_id, fname, lname, eye_color, birth_date,street, city, state, country, postal_code) VALUES (null, 'Susan','Smith', 'BL', '1975-11-02','23 Maple St.', 'Arlington', 'VA', 'USA', '20220');
 
-Screenshot goes here
+![Screenshot](./screenshot/10.png?raw=true "")
 
 ### SELECT person P.37
 
 SELECT person_id, fname, lname, birth_date FROM person;
 
-Screenshot goes here
+![Screenshot](./screenshot/11.png?raw=true "")
 
 ### UPDATE data P.38
 
 UPDATE person SET street = '1225 Tremont St.', city = 'Boston', state = 'MA', country = 'USA',postal_code = '02138' WHERE person_id = 1;
 
-Screenshot goes here
+![Screenshot](./screenshot/12.png?raw=true "")
 
 ### DELETE Data P.39
 
 DELETE FROM person WHERE person_id = 2;
 
-Screenshot goes here
+![Screenshot](./screenshot/13.png?raw=true "")
 
 ### Non-unique Primary Key P.39
 
-Screenshot goes here
+![Screenshot](./screenshot/14.png?raw=true "")
 
 ### Non-existent Foreign Key P.40
 
 INSERT INTO favorite_food (person_id, food) VALUES (999, 'lasagna');
 
-Screenshot goes here
+![Screenshot](./screenshot/15.png?raw=true "")
 
 ### Column Violations P.40
 
  UPDATE person SET eye_color = 'ZZ' WHERE person_id = 1;
 
-Screenshot goes here
+![Screenshot](./screenshot/16.png?raw=true "")
 
 ### Invalid Date Conversions P.40-41
 
 UPDATE person SET birth_date = 'DEC-21-1980' WHERE person_id = 1;
 
-Screenshot goes here
+![Screenshot](./screenshot/17.png?raw=true "")
 
 ### SHOW tables P.42
 
 show tables;
 
-Screenshot goes here
+![Screenshot](./screenshot/18.png?raw=true "")
 
 ### DROP TABLE P.43
 
  DROP TABLE favorite_food;
  DROP TABLE person;
 
-Screenshot goes here
+![Screenshot](./screenshot/19.png?raw=true "")
 
 ## Deliverable
 
